@@ -1,13 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEE"
     tools:context="com.gooner10.materialdesign.NavigationDrawerFragment">
 
-    <ImageView
-        android:layout_width="280dp"
-        android:layout_height="140dp"
-        android:src="@drawable/side_bar"/>
+    <LinearLayout
+        android:id="@+id/containerDrawerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:background="@drawable/side_bar"
+            android:layout_marginTop="@dimen/drawer_margin_top"
+            android:layout_marginBottom="@dimen/drawer_margin_bottom"/>
+
+    </LinearLayout>
+    <RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RecyclerView>
+
+</RelativeLayout>
