@@ -13,16 +13,17 @@
         <ImageView
             android:layout_width="280dp"
             android:layout_height="140dp"
-            android:background="@drawable/side_bar"
-            android:layout_marginTop="@dimen/drawer_margin_top"
-            android:layout_marginBottom="@dimen/drawer_margin_bottom"/>
+            android:layout_marginBottom="@dimen/drawer_margin_bottom"
+            android:background="@drawable/triangle_hd" />
 
     </LinearLayout>
-    <RecyclerView
+
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/drawerList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="140dp">
 
-    </RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
