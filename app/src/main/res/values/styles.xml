@@ -3,12 +3,12 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme"  parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/accent</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <item name="colorControlActivated">@color/colorControlActivated</item>
-        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
     </style>
 
     <style name="MyCustomToolBarTheme" parent="ThemeOverlay.AppCompat.Light">

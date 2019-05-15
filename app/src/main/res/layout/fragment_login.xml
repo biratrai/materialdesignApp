@@ -4,7 +4,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EE98C1"
+            android:background="@color/colorControlActivated"
             tools:context=".LoginFragment">
 
     <LinearLayout
@@ -53,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_password"
+                app:passwordToggleEnabled="true"
                 app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
