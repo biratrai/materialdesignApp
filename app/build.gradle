@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.gooner10.materialdesign"
-        minSdkVersion 11
-        targetSdkVersion 21
+        minSdkVersion 19
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,8 +26,4 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.0.3'
     compile 'com.android.support:design:22.2.0'
 
-    // Espresso dependencies
-//    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
-//    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
-//    androidTestCompile "com.google.android:android-espresso-bundled:1.1.0-SNAPSHOT"
 }
