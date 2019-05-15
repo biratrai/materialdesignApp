@@ -15,5 +15,6 @@
     <string name="hint_password">Enter password</string>
     <string name="button_next">Next</string>
     <string name="button_cancel">Cancel</string>
+    <string name="error_password">Wrong Password</string>
 
 </resources>
