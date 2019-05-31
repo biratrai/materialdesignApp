@@ -12,9 +12,6 @@ import java.util.List;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-/**
- * Created by Gooner10 on 5/27/15.
- */
 public class RecycleAdapter extends RecyclerView.Adapter <RecycleAdapter.MyViewHolder>{
 
     private LayoutInflater inflater;
