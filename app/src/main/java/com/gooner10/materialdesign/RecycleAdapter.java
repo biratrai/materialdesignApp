@@ -1,7 +1,6 @@
 package com.gooner10.materialdesign;
 
 import android.content.Context;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,16 +8,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by Gooner10 on 5/27/15.
- */
+import androidx.recyclerview.widget.RecyclerView;
+
 public class RecycleAdapter extends RecyclerView.Adapter <RecycleAdapter.MyViewHolder>{
 
     private LayoutInflater inflater;
-    List<Information> data = Collections.emptyList();
+    List<Information> data;
     private Context context;
 
     public RecycleAdapter(Context context, List<Information> data) {
@@ -30,15 +27,14 @@ public class RecycleAdapter extends RecyclerView.Adapter <RecycleAdapter.MyViewH
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.custom_row, parent, false);
-        MyViewHolder holder = new MyViewHolder(view);
-        return holder;
+        return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Information current = data.get(position);
-        holder.title.setText(current.title);
-        holder.icon.setImageResource(current.iconId);
+        holder.title.setText(current.getTitle());
+        holder.icon.setImageResource(current.getIconId());
 
     }
 
@@ -52,10 +48,9 @@ public class RecycleAdapter extends RecyclerView.Adapter <RecycleAdapter.MyViewH
         ImageView icon;
         public MyViewHolder(View itemView) {
             super(itemView);
-            title = (TextView) itemView.findViewById(R.id.listText);
-            icon = (ImageView) itemView.findViewById(R.id.listIcon);
+            title = itemView.findViewById(R.id.listText);
+            icon = itemView.findViewById(R.id.listIcon);
             icon.setOnClickListener(this);
-
         }
 
 

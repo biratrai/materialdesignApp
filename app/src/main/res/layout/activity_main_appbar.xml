@@ -12,25 +12,25 @@
             android:layout_height="match_parent"
             tools:context=".MainActivity"/>
 
-    <androidx.drawerlayout.widget.DrawerLayout
-            android:id="@+id/drawer_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<!--    <androidx.drawerlayout.widget.DrawerLayout-->
+<!--            android:id="@+id/drawer_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
 
-        <fragment
-                android:id="@+id/fragment_navigation_drawer"
-                android:name="com.gooner10.materialdesign.NavigationDrawerFragment"
-                android:layout_width="@dimen/nav_drawer_width"
-                android:layout_height="match_parent"
-                android:layout_gravity="start"
-                app:layout="@layout/fragment_navigation_drawer"
-                tools:layout="@layout/fragment_navigation_drawer"/>
+<!--        <fragment-->
+<!--                android:id="@+id/fragment_navigation_drawer"-->
+<!--                android:name="com.gooner10.materialdesign.NavigationDrawerFragment"-->
+<!--                android:layout_width="@dimen/nav_drawer_width"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="start"-->
+<!--                app:layout="@layout/fragment_navigation_drawer"-->
+<!--                tools:layout="@layout/fragment_navigation_drawer"/>-->
 
-    </androidx.drawerlayout.widget.DrawerLayout>
+<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
 
-    <include
-            android:id="@+id/app_bar"
-            layout="@layout/app_bar">
-    </include>
+<!--    <include-->
+<!--            android:id="@+id/app_bar"-->
+<!--            layout="@layout/app_bar">-->
+<!--    </include>-->
 
 </LinearLayout>

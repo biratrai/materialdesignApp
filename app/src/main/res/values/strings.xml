@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MaterialDesign</string>
+    <string name="app_name">Material App</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -15,5 +15,6 @@
     <string name="hint_password">Enter password</string>
     <string name="button_next">Next</string>
     <string name="button_cancel">Cancel</string>
+    <string name="error_password">Wrong Password</string>
 
 </resources>

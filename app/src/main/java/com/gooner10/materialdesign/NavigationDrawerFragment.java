@@ -74,8 +74,8 @@ public class NavigationDrawerFragment extends Fragment {
         for(int i=0; i<titles.length && i<icons.length;i++)
         {
             Information current = new Information();
-            current.iconId = icons[i];
-            current.title = titles[i];
+            current.setIconId(icons[i]);
+            current.setTitle(titles[i]);
             data.add(current);
         }
 //        Log.i("TAG", "Inside getData"+data);
